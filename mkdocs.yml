@@ -1,0 +1,162 @@
+site_name: TUCiM
+site_author: TUCOSNA
+site_description: TUC GUIDE FOR FRESHMAN
+repo_name: 'Github/TUCiM'
+repo_url: 'https://github.com/teriyakisushi/tuc.github.io'
+edit_uri: 'edit/main/docs/'
+copyright: CC BY-NC-SA 4.0 | TUCiM | TUCOSNA
+highlightjs: true
+theme: 
+  name : material
+  features:
+    - content.action.edit
+    - navigation.tabs
+  palette:
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+
+# 在此新增栏目，必须严格按照yaml格式编写
+
+# 父级元素为顶部导航栏
+# 子级元素为左侧侧边栏内容，最底级元素必须要有markdown文件(命名尽量规范)
+# 最好为新增栏目新建一个目录
+# 例如新增一个学院专业的栏目, 在根目录下新建major文件夹
+# - 学院专业:
+#     - 总览: major/view.md
+#     - 信息工程学院:
+#         - 计算机科学与技术: major/cs.md
+#     - 外国语学院:
+#         - 英语: major/english.md
+nav:
+  - 主页: 
+      - Introduction: index.md
+      - 关于天商: about.md
+      - 参与贡献: join_contribute.md
+
+    # 录取分数线
+  - 录取分数线:
+      - 关于报考: admission/main.md
+      - 省份:
+          - 广东: admission/gd.md
+          - 江苏: admission/js.md
+
+    # 学院
+  - 学院:
+      - 介绍: colleges/main.md
+      - 法学院: colleges/law.md
+      - 管理学院: colleges/ma.md
+      - 公共管理学院: colleges/pma.md
+      - 经济学院: colleges/eco.md
+      - 机械工程学院: colleges/mec.md
+      - 会计学院: colleges/acct.md
+      - 理学院: colleges/sci.md
+      - 马克思主义学院: colleges/marx.md
+      - 生物技术与食品科学学院: colleges/bio.md
+      - 外国语学院: colleges/foreign.md
+      - 信息工程学院: colleges/ie.md
+      - 艺术学院: colleges/art.md
+      - 国际教育合作学院: colleges/intele.md
+
+    # 学校政策
+  - 学校政策:
+      - Introduction: policy/main.md
+      - 转专业: policy/change_major.md
+      - 绩点: policy/gpa.md
+      - 保研: policy/postgraduate.md
+      - 奖学金: policy/ss.md
+      - 挂科与补考: policy/exam_fail.md
+      - 学业预警: policy/swarning.md
+
+    # 住宿环境
+  - 住宿环境:
+      - 总览: acom/main.md
+      - 按区域:
+          - 桃李园(1~7): acom/taoli.md
+          - 西区(8~13): acom/xi.md
+          - 南区(14~21,41): acom/nan.md
+          - 新南区(23~33, 47~49): acom/xinnan.md
+          - 老东门(39,40): acom/laodongmen.md
+          - 新东门(43~45): acom/xindongmen.md
+          - FIU: acom/fiu.md
+          - 青云阁: acom/qingyun.md
+      
+    # Departments !Wang xin ban is absolutely SB!!!
+  - 职能部门:
+      - 简介: dept/main.md
+      - 财务处: dept/finacc.md
+      - 网信办: dept/sb.md
+
+    # ORG AND CLUBS
+  - 社团组织:
+      - 总览: orgnclubs/org.md
+      - 校级: orgnclubs/school.md
+      - 院级: orgnclubs/college.md
+
+    # Facilities and Labs
+  - 教学楼与实验室: 
+      - 总览: facility/main.md
+      - 图书馆: facility/lib.md
+      - 体育馆: facility/gym.md
+      - 教学楼: 
+          - 1号教学楼: facility/1f.md
+          - 2号教学楼: facility/2f.md
+          - 3号教学楼: facility/3f.md
+          - 4号教学楼: facility/4f.md
+          - 5号教学楼: facility/5f.md
+          - 6号教学楼: facility/6f.md
+          - 7号教学楼: facility/7f.md
+      - 实验楼:
+          - 1号实验楼: facility/1lab.md
+          - 2号实验楼: facility/2lab.md
+          - 3号实验楼: facility/3lab.md
+          - 4号实验楼: facility/4lab.md
+          - 能源X环境中心: facility/englab.md
+
+    # Campus Life
+  - 校园生活: live.md
+
+    # Transportation
+  - 交通出行: 
+      - 出行: go_owo_go.md
+
+    # Play & Guide
+  - 游玩攻略: 
+      - Introduction: play/main.md
+
+    # Edit Guide
+  - 编辑指南: 
+      - Introduction: edit/main.md
+
+
+# Configurations
+# Extensions
+markdown_extensions:
+  - admonition
+  - def_list
+  - footnotes
+  - meta
+  - attr_list
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
