@@ -38,12 +38,45 @@ nav:
   - 录取分数线:
       - 关于报考: admission/main.md
       - 省份:
-          - 北京: admission/pk.md
-          - 重庆: admission/cq.md
-          - 上海: admission/sh.md
-          - 天津: admission/tj.md
+          - 直辖市:
+            - 北京: admission/pk.md
+            - 重庆: admission/cq.md
+            - 上海: admission/sh.md
+            - 天津: admission/tj.md
+          - 新高考I卷:
+            - 广东: admission/gd.md
+            - 湖南: admission/hn.md
+            - 湖北: admission/hb.md
+            - 福建: admission/fj.md
+            - 江苏: admission/js.md
+            - 浙江: admission/zj.md
+            - 河北: admission/hebei.md
+            - 山东: admission/sd.md
+          - 新高考II卷:
+            - 海南: admission/hainan.md
+            - 云南: admission/yn.md
+            - 贵州: admission/gz.md
+            - 广西: admission/gx.md
+            - 江西: admission/jx.md
+            - 安徽: admission/ah.md
+            - 河南: admission/henan.md
+            - 山西: admission/shanxi.md
+            - 辽宁: admission/ln.md
+            - 吉林: admission/jl.md
+            - 黑龙江: admission/hlj.md
+            - 甘肃: admission/gs.md
+            - 新疆: admission/xj.md
+          - 全国甲卷:
+            - 四川: admission/sc.md
+            - 西藏: admission/xz.md
+          - 全国乙卷:
+            - 陕西: admission/sx.md
+            - 宁夏: admission/nx.md
+            - 青海: admission/qh.md
+            - 内蒙古: admission/nmg.md
 
-  - 新生攻略: freshman.md
+  - 新生攻略:
+      - 简介: freshman/main.md
 
     # 学院
   - 学院:
@@ -132,9 +165,9 @@ nav:
   - 贡献指南: 
       - 简介: edit/main.md
       - 编辑规范: 
-        - 基本要求: edit/basic.md
+        - 基本格式: edit/basic.md
         - Markdown语法: edit/markdown.md
-        - 额外扩展: edit/extra.md
+        - 扩展资源: edit/extra.md
       - 本地编辑工具: edit/local.md
       - 常见问题: edit/troubleshooting.md
 
