@@ -2,7 +2,7 @@ site_name: TUCiM
 site_author: TUCOSNA
 site_description: TUC GUIDE FOR FRESHMAN
 repo_name: 'Github/TUCiM'
-repo_url: 'https://github.com/teriyakisushi/tuc.github.io'
+repo_url: 'https://github.com/teriyakisushi/tucim'
 edit_uri: 'edit/main/docs/'
 copyright: CC BY-NC-SA 4.0 | TUCiM | TUCOSNA
 highlightjs: true
@@ -11,23 +11,9 @@ theme:
   features:
     - content.action.edit
     - navigation.tabs
-  palette:
-
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: blue
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: black
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+    - content.tooltips
+    - content.code.copy
+    - content.code.annotate
 
 
 # 在此新增栏目，必须严格按照yaml格式编写
@@ -52,8 +38,12 @@ nav:
   - 录取分数线:
       - 关于报考: admission/main.md
       - 省份:
-          - 广东: admission/gd.md
-          - 江苏: admission/js.md
+          - 北京: admission/pk.md
+          - 重庆: admission/cq.md
+          - 上海: admission/sh.md
+          - 天津: admission/tj.md
+
+  - 新生攻略: freshman.md
 
     # 学院
   - 学院:
@@ -139,11 +129,40 @@ nav:
       - Introduction: play/main.md
 
     # Edit Guide
-  - 编辑指南: 
-      - Introduction: edit/main.md
+  - 贡献指南: 
+      - 简介: edit/main.md
+      - 编辑规范: 
+        - 基本要求: edit/basic.md
+        - Markdown语法: edit/markdown.md
+        - 额外扩展: edit/extra.md
+      - 本地编辑工具: edit/local.md
+      - 常见问题: edit/troubleshooting.md
+
 
 
 # Configurations
+
+  #Palettes
+palette:
+
+    # Palette toggle for light mode
+  - media: "(prefers-color-scheme: light)"
+    scheme: default
+    primary: blue
+    toggle:
+      icon: material/brightness-7
+      name: Switch to dark mode
+
+    # Palette toggle for dark mode
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    primary: black
+    toggle:
+      icon: material/brightness-4
+      name: Switch to light mode
+
+
+
 # Extensions
 markdown_extensions:
   - admonition
@@ -152,11 +171,19 @@ markdown_extensions:
   - meta
   - attr_list
   - md_in_html
+  - footnotes
+  - pymdownx.superfences
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+  # JavaScripts
 extra_javascript:
-  - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+
+# Plugins
+plugins:
+  - glightbox
