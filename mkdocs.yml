@@ -6,14 +6,7 @@ repo_url: 'https://github.com/teriyakisushi/tucim'
 edit_uri: 'edit/main/docs/'
 copyright: CC BY-NC-SA 4.0 | TUCiM | TUCOSNA
 highlightjs: true
-theme: 
-  name : material
-  features:
-    - content.action.edit
-    - navigation.tabs
-    - content.tooltips
-    - content.code.copy
-    - content.code.annotate
+
 
 
 # 在此新增栏目，必须严格按照yaml格式编写
@@ -131,7 +124,7 @@ nav:
       - 院级: orgnclubs/college.md
 
     # Facilities and Labs
-  - 教学楼与实验室: 
+  - 校园建筑与设施: 
       - 总览: facility/main.md
       - 图书馆: facility/lib.md
       - 体育馆: facility/gym.md
@@ -167,7 +160,7 @@ nav:
       - 编辑规范: 
         - 基本格式: edit/basic.md
         - Markdown语法: edit/markdown.md
-        - 扩展资源: edit/extra.md
+        - 扩展语法: edit/extra_syntax.md
       - 本地编辑工具: edit/local.md
       - 常见问题: edit/troubleshooting.md
 
@@ -176,23 +169,44 @@ nav:
 # Configurations
 
   #Palettes
-palette:
-
+theme: 
+  name : material
+  icon:
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+  features:
+    - content.action.edit
+    - navigation.tabs
+    - content.tooltips
+    - content.code.copy
+    - content.code.annotate
+  palette:
     # Palette toggle for light mode
-  - media: "(prefers-color-scheme: light)"
-    scheme: default
-    primary: blue
-    toggle:
-      icon: material/brightness-7
-      name: Switch to dark mode
+    - media: "(prefers-color-scheme: lights)"
+      scheme: default
+      primary: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
 
     # Palette toggle for dark mode
-  - media: "(prefers-color-scheme: dark)"
-    scheme: slate
-    primary: black
-    toggle:
-      icon: material/brightness-4
-      name: Switch to light mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 
 
 
@@ -205,6 +219,9 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - footnotes
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
   - pymdownx.superfences
   - pymdownx.arithmatex:
       generic: true
