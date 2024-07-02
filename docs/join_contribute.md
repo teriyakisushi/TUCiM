@@ -5,7 +5,8 @@
 	编写请参照[贡献指南](edit/main.md)，按照本项目要求的规范格式参与编写，本项目使用[mkdocs-material](https://squidfunk.github.io/mkdocs-material/)主题，你可以参照官方文档对本项目进行自定义修改。若您是对文档知识的补充或内容勘误，可**通过问卷调查**形式参与
 
 ## 通过问卷调查
-`<还没搞，等你们写的差不多了我再开放>`
+
+点击这里 [**问卷调查**](https://www.wenjuan.com/s/UZBZJvmsjpz/) 参与问卷调查。
 
 ## 通过 QQ 群组提供内容
 ```cpp
