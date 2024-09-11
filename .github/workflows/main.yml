@@ -24,6 +24,9 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material
-      - run: pip install mkdocs-glightbox
-      - run: mkdocs gh-deploy --force
+      - name: Install Material Theme 🤗
+        run: pip install mkdocs-material
+      - name: Install Docs Plugins 🚀
+        run: pip install mkdocs-glightbox
+      - name: Build Docs 📕
+        run: mkdocs gh-deploy --force
