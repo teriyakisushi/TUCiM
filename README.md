@@ -4,13 +4,13 @@
 
 
 <p align="center">
-  <img src="https://img.shields.io/github/license/teriyakisushi/teriyakisushi.github.io
+  <img src="https://img.shields.io/github/license/teriyakisushi/TUCiM
   ">
-  <img src="https://img.shields.io/github/contributors/teriyakisushi/teriyakisushi.github.io
+  <img src="https://img.shields.io/github/contributors/teriyakisushi/TUCiM
   ">
-  <img src="https://img.shields.io/github/stars/teriyakisushi/teriyakisushi.github.io?style=flat
+  <img src="https://img.shields.io/github/stars/teriyakisushi/TUCiM?style=flat
   ">
-  <img src="https://img.shields.io/github/forks/teriyakisushi/teriyakisushi.github.io?style=flat
+  <img src="https://img.shields.io/github/forks/teriyakisushi/TUCiM?style=flat
   ">
 </p>
 
