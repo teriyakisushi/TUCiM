@@ -4,15 +4,10 @@
 
 
 <p align="center">
-  <img src="https://img.shields.io/github/license/teriyakisushi/TUCiM
-  ">
-  <img src="https://img.shields.io/github/contributors/teriyakisushi/TUCiM
-  ">
-  <img src="https://img.shields.io/github/stars/teriyakisushi/TUCiM?style=flat
-  ">
-  <img src="https://img.shields.io/github/forks/teriyakisushi/TUCiM?style=flat
-  ">
-</p>
+  <img src="https://img.shields.io/github/license/teriyakisushi/TUCiM">
+  <img src="https://img.shields.io/github/contributors/teriyakisushi/TUCiM">
+  <img src="https://img.shields.io/github/stars/teriyakisushi/TUCiM?style=flat">
+  <img src="https://img.shields.io/github/forks/teriyakisushi/TUCiM?style=flat">
 
 ### 简介
 
